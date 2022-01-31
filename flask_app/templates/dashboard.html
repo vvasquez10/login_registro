@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            text-align: center;
+            margin-inline: 20%;
+        }        
+        .footer{
+            text-align: end;
+        }
+        .btn{
+            font-size: 20px;
+        }
+    </style>    
+    <title>Main Menu</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome {{user_name}}, what are we gonna do today?</h1>
+        <div class="footer">
+            <form action="/logout" method="GET">
+                <button class="btn" type="submit">
+                    Cerrar sesión
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
